@@ -6,17 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engaged Learning Resources | UMSI</title>
 
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
     <header>
-        <a href="#main">Skip to Main Content</a>
+        <a href="#main" class="skip-link">Skip to Main Content</a>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <div class="header-divider" aria-hidden="true">
+            <span>ENGAGED LEARNING</span>
+        </div>
+
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="prep.html">Preparing & Starting Your Experience</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="prep.html">Preparing &amp; Starting Your Experience</a></li>
                 <li><a href="during.html">During Your Experience</a></li>
                 <li><a href="ending.html">Ending Your Experience</a></li>
             </ul>
@@ -27,21 +34,15 @@
     <main id="main">
         <section>
             <h2>Build Skills. Work with Partners. Have an Impact.</h2>
-            <p>
+            <p class="page-intro">
                 The UMSI Engaged Learning Office connects students with opportunities to apply classroom knowledge to
                 real challenges. Use this site to prepare for your experience, manage your work, and reflect on what you
                 learned.
             </p>
 
-            <p>
-                Watch the video:
-                <a href="https://www.youtube.com/watch?v=你的VIDEO_ID">
-                    UMSI students engage with real clients and real challenges
-                </a>
-            </p>
         </section>
 
-        <section>
+        <section class="benefits">
             <h2>Why Use This Resource?</h2>
 
             <p>Real-world projects rarely follow a perfect plan. This site helps you find the right guidance when you
@@ -62,7 +63,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="guidance">
             <h2>Guidance for Every Stage</h2>
 
             <p>
@@ -100,7 +101,7 @@
             </article>
         </section>
 
-        <section>
+        <section class="programs">
             <h2>Featured Programs</h2>
             <p>Explore opportunities to collaborate with organizations, communities, student teams, and partners in
                 Michigan and beyond.</p>
@@ -159,16 +160,25 @@
         </aside>
     </main>
 
-    <hr>
 
     <footer>
-        <p>University of Michigan School of Information | <a
-                href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">Engaged Learning
-                Office </a></p>
-        <address>
-            <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a>
-        </address>
+        <div class="footer-heading">
+            <span>ENGAGED LEARNING</span>
+        </div>
+        <!-- UMSI/ELO footer graphic generated with ChatGPT.
+     Visual inspiration: https://lemkus.com/ -->
+
+        <img class="footer-brand" src="images/umsi-elo-footer.png" alt="UMSI/ELO">
+        <div class="footer-links">
+            <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">
+                Engaged Learning Office
+            </a>
+            <a href="mailto:umsi.engagement@umich.edu">
+                Email Us
+            </a>
+        </div>
         <p>&copy; 2026 Regents of the University of Michigan</p>
+
     </footer>
 </body>
 

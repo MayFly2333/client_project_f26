@@ -5,20 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>During Your Experience | UMSI</title>
+
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <header>
-    <a href="#main">Skip to Main Content</a>
+    <a href="#main" class="skip-link">Skip to Main Content</a>
 
     <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+    <div class="header-divider" aria-hidden="true">
+      <span>ENGAGED LEARNING</span>
+    </div>
 
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="prep.html">Preparing & Starting Your Experience</a></li>
-        <li><a href="during.html">During Your Experience</a></li>
+        <li><a href="prep.html">Preparing &amp; Starting Your Experience</a></li>
+        <li><a href="during.html" aria-current="page">During Your Experience</a></li>
         <li><a href="ending.html">Ending Your Experience</a></li>
       </ul>
     </nav>
@@ -32,12 +38,12 @@
     <section>
       <h2>Navigating Your Active Project</h2>
 
-      <p>
+      <p class="page-intro">
         Master the art of adaptive project management, human-centered fieldwork,
         and constructive feedback as you execute your project in real time.
       </p>
 
-      <p>
+      <p class="section-jump">
         <a href="#phase3">Phase 3: Managing &amp; Executing in the Field</a>
       </p>
     </section>
@@ -69,15 +75,14 @@
     <section id="phase3">
 
       <h2>Phase 3: Managing &amp; Executing in the Field</h2>
-      <img src="images/UMSI__CIDEXPODearborn_042023_03.jpg" alt="People gather in an event space" width="500">
 
-      <p>
+      <p class="phase-intro">
         Conducting research, tracking progress, and maintaining clear communication
         with project sponsors.
       </p>
+      <img src="images/UMSI__CIDEXPODearborn_042023_03.jpg" alt="People gather in an event space" width="500">
 
-
-      <article>
+      <article class="objectives">
         <h3>Focus &amp; Objectives</h3>
 
         <ul>
@@ -100,7 +105,7 @@
       </article>
 
 
-      <article>
+      <article class="resources">
         <h3>Featured Resources &amp; Handouts</h3>
 
         <ul>
@@ -186,25 +191,25 @@
 
   </main>
 
-  <hr>
-
   <footer>
-    <p>
-      University of Michigan School of Information |
+    <div class="footer-heading">
+      <span>ENGAGED LEARNING</span>
+    </div>
+    <!-- UMSI/ELO footer graphic generated with ChatGPT.
+     Visual inspiration: https://lemkus.com/ -->
+
+    <img class="footer-brand" src="images/umsi-elo-footer.png" alt="UMSI/ELO">
+    <div class="footer-links">
       <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">
         Engaged Learning Office
       </a>
-    </p>
-
-    <address>
       <a href="mailto:umsi.engagement@umich.edu">
-        umsi.engagement@umich.edu
+        Email Us
       </a>
-    </address>
-
+    </div>
     <p>&copy; 2026 Regents of the University of Michigan</p>
-  </footer>
 
+  </footer>
 </body>
 
 </html>

@@ -5,19 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Preparing & Starting Your Experience | UMSI</title>
+
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <header>
-    <a href="#main">Skip to Main Content</a>
+    <a href="#main" class="skip-link">Skip to Main Content</a>
 
     <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
-
+    <div class="header-divider" aria-hidden="true">
+      <span>ENGAGED LEARNING</span>
+    </div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="prep.html">Preparing & Starting Your Experience</a></li>
+        <li><a href="prep.html" aria-current="page">Preparing &amp; Starting Your Experience</a></li>
         <li><a href="during.html">During Your Experience</a></li>
         <li><a href="ending.html">Ending Your Experience</a></li>
       </ul>
@@ -32,18 +37,18 @@
     <section>
       <h2>Launch Your Engaged Learning Journey</h2>
 
-      <p>
+      <p class="page-intro">
         Transform your academic foundation into real-world impact. The UMSI
         Engaged Learning Office (ELO) guides you through the crucial early
         stages of project work—from self-reflection and community context
         to team charters and initial client kickoff.
       </p>
 
-      <p>
+      <p class="section-jump">
         <a href="#phase1">Phase 1: Preparing</a>
       </p>
 
-      <p>
+      <p class="section-jump">
         <a href="#phase2">Phase 2: Starting</a>
       </p>
     </section>
@@ -77,7 +82,7 @@
 
       <h2>Phase 1: Preparing for the Experience</h2>
 
-      <p>
+      <p class="phase-intro">
         Before work begins, take time to set up the foundation, understand community context,
         evaluate your team's readiness, and identify what you still need to learn.
       </p>
@@ -97,16 +102,11 @@
           alongside stakeholders.
         </p>
 
-        <p>
-          Preparing thoughtfully allows you to approach partners not as
-          an outside "expert" fixing a problem, but as a collaborative
-          learner working alongside stakeholders.
-        </p>
 
       </article>
 
 
-      <article>
+      <article class="objectives">
         <h3>Focus &amp; Objectives</h3>
 
         <ul>
@@ -130,7 +130,7 @@
       </article>
 
 
-      <article>
+      <article class="reflection-questions">
         <h3>Questions to Consider</h3>
 
         <ul>
@@ -139,7 +139,6 @@
           <li>What assumptions am I making about the partner, community, or project?</li>
           <li>What knowledge and skills does my team already have?</li>
           <li>What knowledge or perspectives are missing from our team?</li>
-          <li>How will the partner participate in project decisions?</li>
           <li>What would a mutually beneficial outcome look like?</li>
         </ul>
         <img src="images/UMSI_CID_LansingExpo_10.jpg"
@@ -184,7 +183,7 @@
       </article>
 
 
-      <article>
+      <article class="resources">
         <h3>Featured Preparation Resources</h3>
 
         <ul>
@@ -259,7 +258,7 @@
 
       <h2>Phase 2: Starting the Experience</h2>
 
-      <p>
+      <p class="phase-intro">
         Establishing professional communication, conducting initial meetings,
         and finalizing partnership agreements.
       </p>
@@ -284,7 +283,7 @@
       </article>
 
 
-      <article>
+      <article class="objectives">
         <h3>Focus &amp; Objectives</h3>
 
         <ul>
@@ -306,7 +305,7 @@
       </article>
 
 
-      <article>
+      <article class="resources">
         <h3>Featured Starting Resources</h3>
 
         <ul>
@@ -356,23 +355,25 @@
 
   </main>
 
-  <hr>
 
   <footer>
-    <p>
-      University of Michigan School of Information |
+    <div class="footer-heading">
+      <span>ENGAGED LEARNING</span>
+    </div>
+    <!-- UMSI/ELO footer graphic generated with ChatGPT.
+     Visual inspiration: https://lemkus.com/ -->
+
+    <img class="footer-brand" src="images/umsi-elo-footer.png" alt="UMSI/ELO">
+    <div class="footer-links">
       <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">
         Engaged Learning Office
       </a>
-    </p>
-
-    <address>
       <a href="mailto:umsi.engagement@umich.edu">
-        umsi.engagement@umich.edu
+        Email Us
       </a>
-    </address>
-
+    </div>
     <p>&copy; 2026 Regents of the University of Michigan</p>
+
   </footer>
 
 </body>
