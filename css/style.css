@@ -90,9 +90,13 @@ main>section {
     margin-bottom: 1.5rem;
 }
 
-main>section+section {
-    margin-top: 2.5rem;
+/* Update according to tt's feedback: Improve visual separation between major sections */
+main > section + section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #CBD5DF;
 }
+
 main img {
     display: block;
     max-width: 100%;
@@ -271,8 +275,13 @@ header img {
     justify-self: center;
 }
 
-header nav {
+/* Update according to tt's feedback 1: Make navigation visually distinct from content cards */
+.page-layout > nav {
     width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    background-color: var(--color-michigan-blue);
+    border-radius: var(--border-radius);
 }
 
 header h1 {
@@ -529,3 +538,175 @@ footer p:last-child {
     font-weight: normal;
 }
 
+/* Below are step 3 designs */
+
+/* Hide the page table of contents on mobile */
+.page-toc {
+    display: none;
+}
+
+/* Desktop layout */
+@media screen and (min-width: 1024px) {
+    .page-layout {
+        display: grid;
+        grid-template-columns: 17rem minmax(0, 1fr);
+        gap: 2rem;
+        max-width: 90rem;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        align-items: start;
+    }
+
+    .page-layout > nav {
+        background-color: var(--color-michigan-blue);
+        padding: 0.75rem;
+        border-radius: var(--border-radius);
+    }
+
+    .page-layout > main {
+        min-width: 0;
+        padding-top: 0;
+    }
+
+    .page-toc {
+        display: grid;
+        gap: 0.25rem;
+        padding: 0.5rem 0.5rem 0.75rem 1rem;
+        margin: 0;
+        list-style: none;
+    }
+
+    .page-layout nav .page-toc a {
+        background-color: transparent;
+        color: var(--color-light);
+        border-left: 2px solid var(--color-maize);
+        padding: 0.4rem 0.75rem;
+        font-size: 0.875rem;
+        font-weight: normal;
+    }
+
+    .page-layout nav .page-toc a:hover,
+    .page-layout nav .page-toc a:focus-visible {
+        background-color: var(--color-maize);
+        color: var(--color-michigan-blue);
+    }
+}
+
+/* 404 page */
+
+
+.error-page {
+  max-width: 40rem;
+  margin: 4rem auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.error-page h1 {
+  color: var(--color-michigan-blue);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.error-page p {
+  margin-bottom: 2rem;
+}
+
+.error-home-link {
+  display: inline-block;
+  background-color: var(--color-michigan-blue);
+  color: #FFFFFF;
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.error-home-link:hover,
+.error-home-link:focus-visible {
+  background-color: var(--color-maize);
+  color: var(--color-michigan-blue);
+}
+
+/* saved resources */
+
+.saved-stage {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #CBD5DF;
+  border-radius: var(--border-radius);
+  background-color: #FFFFFF;
+}
+
+.saved-stage h3 {
+  color: var(--color-michigan-blue);
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid var(--color-maize);
+}
+
+.saved-stage > p {
+  margin: 0;
+}
+
+.saved-stage ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.saved-resource-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 0;
+}
+
+.saved-resource-item + .saved-resource-item {
+  border-top: 1px solid #CBD5DF;
+}
+
+.save-resource,
+.remove-resource {
+  padding: 0.4rem 0.8rem;
+  border: 2px solid var(--color-michigan-blue);
+  border-radius: var(--border-radius);
+  background-color: #FFFFFF;
+  color: var(--color-michigan-blue);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.save-resource {
+  margin-left: 0.5rem;
+}
+
+.save-resource[aria-pressed="true"] {
+  background-color: var(--color-maize);
+}
+
+.save-resource:hover,
+.remove-resource:hover {
+  background-color: var(--color-maize);
+}
+
+.save-resource:focus-visible,
+.remove-resource:focus-visible {
+  outline: 3px solid var(--color-michigan-blue);
+  outline-offset: 3px;
+}
+
+.resources li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.resources li .save-resource {
+  margin: 1rem 0 0;
+  align-self: flex-start;
+}
